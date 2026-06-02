@@ -1,7 +1,37 @@
-Sec. #1: Vectors (Row and Columns) + The difference between vectors and matrices
+**Sec. #1: Vectors (Rows and Columns) + The difference between vectors and matrices**
+Vectors are usually in the form of rows or columns.
+Matrices are usually square or rectangular (more than 1 row or column), whereas vectors are a singular row or column (special case of matrices).
+In physics, vectors are usually called line with direction, but in math, it's just a list of numbers either along a row or a column. 
 
-Sec. #2: Linear Combinations (Adding vectors and Multiplying scalars)
+**Sec. #2: Linear Combinations (Adding vectors and Multiplying scalars)**
+One vector (cv) = if we wary c, the combinations fill the 1D line running through the origin (unless v is a zero vector).
+Two vectors (cv + dw) = most cases: fill the flat 2D space
+special case: if w is a multiple of v, then lines overlap and they only fill the 1D space.
+Three vectors (cv + dw + ez) = most cases: they fill the entire 3D space
+special case: (2D) if the third vector z lies flat on the plane formed by v and w, they are trapped in a 2D plane
+(1D) if all three points along the same path, they are trapped on a 1D plane.
 
-Sec. #3: Dot Product
+c is a scalar and v a vector, so this is scalar multiplication
+when we write something as cv + dw, we are multiplying scalars first with v and w and then adding two vectors. 
+This is called linear combination. 
 
-Sec. #4: Matrix Multiplication
+**Sec. #3: Dot Product**
+Dot product of two vectors = v . w
+If a column vector v has elements $v_1$ and $v_2$ and another column vector w has elements $w_1$ and $w_2$, the dot product here is, v . w = $v_1w_1 + v_2w_2$ 
+For an n-dimensional space (generalization), we multiply it to the very end ($\dots v_nw_n$)
+
+The dot product of v . v tells us the squared length.
+Where as a unit vector has the length as 1.
+Perpendicular vectors have dot product as 0, v . w = 0
+And if the vectors aren't perpendicular, 
+$$\cos \theta = \frac{\mathbf{v} \cdot \mathbf{w}}{\|\mathbf{v}\| \|\mathbf{w}\|}$$
+
+There are two important inequalities here:
+1. Schwartz inequality
+2. Triangle inequality
+
+**Sec. #4: Matrix Multiplication**
+Matrices are usually defined with upper case letters such as A, M, R, etc. 
+They have m rows and n columns
+
+There are various types of matrices, such as identity matrix, diagonal matrix, triangular matrix, etc. 
