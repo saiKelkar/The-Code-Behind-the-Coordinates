@@ -30,8 +30,30 @@ There are two important inequalities here:
 1. Schwartz inequality
 2. Triangle inequality
 
+```
+m_1 = np.arange(10, 20, 3)
+m_2 = np.arange(5, 15, 3)
+
+d_p = np.dot(m_1, m_2)
+print(d_p)
+```
+
 **Sec. #4: Matrix Multiplication**
 Matrices are usually defined with upper case letters such as A, M, R, etc. 
 They have m rows and n columns
 
 There are various types of matrices, such as identity matrix, diagonal matrix, triangular matrix, etc. 
+
+```
+A = np.random.randn(3, 2)
+B = np.random.randn(2, 4)
+
+C = A @ B
+D = np.dot(A, B)
+
+print(np.shape(C))
+print(C)
+
+print(np.shape D)
+print(D)
+```
