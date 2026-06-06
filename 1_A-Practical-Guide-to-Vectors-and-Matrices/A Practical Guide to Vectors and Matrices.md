@@ -3,6 +3,18 @@ Vectors are usually in the form of rows or columns.
 Matrices are usually square or rectangular (more than 1 row or column), whereas vectors are a singular row or column (special case of matrices).
 In physics, vectors are usually called line with direction, but in math, it's just a list of numbers either along a row or a column. 
 
+```
+# row and column vector
+row_vec = np.array([4, 2])
+col_vec = np.array([ [-2], [3] ])
+
+print("row vector:", row_vec)
+print("column vector:\n", col_vec)
+
+display(Math(sym.latex(sym.simplify(row_vec))))
+display(Math(sym.latex(sym.simplify(col_vec))))
+```
+
 **Sec. #2: Linear Combinations (Adding vectors and Multiplying scalars)**
 One vector (cv) = if we wary c, the combinations fill the 1D line running through the origin (unless v is a zero vector).
 Two vectors (cv + dw) = most cases: fill the flat 2D space
@@ -15,6 +27,30 @@ c is a scalar and v a vector, so this is scalar multiplication
 when we write something as cv + dw, we are multiplying scalars first with v and w and then adding two vectors. 
 This is called linear combination. 
 
+```
+v = np.array([.5, 1])
+s = [1, -.5, 2, .5]
+
+for si in s:
+	sv = si * v
+	plt.plot([0, sv[0]], [0, sv[1]], 'o-', linewidth=3, label=f'$\\lambda$ = {si}')
+	
+plt.axis('square')
+plt.axis([-3, 3, -3, 3])
+plt.grid()
+plt.legend()
+plt.show()
+```
+
+```
+v1 = np.array([-1, 2])
+v2 = np.array([1, 1])
+
+v3a = v1 + v2
+v3b = np.add(v1, v2)
+
+print(v3a, v3b)
+```
 **Sec. #3: Dot Product**
 Dot product of two vectors = v . w
 If a column vector v has elements $v_1$ and $v_2$ and another column vector w has elements $w_1$ and $w_2$, the dot product here is, v . w = $v_1w_1 + v_2w_2$ 
