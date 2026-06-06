@@ -1,3 +1,5 @@
+Welcome to the very first technical post of this series. There are a couple different series for each topic in which I plan to post the summaries and discussions. 
+
 **Sec. #1: Vectors (Rows and Columns) + The difference between vectors and matrices**
 Vectors are usually in the form of rows or columns.
 Matrices are usually square or rectangular (more than 1 row or column), whereas vectors are a singular row or column (special case of matrices).
@@ -93,3 +95,4 @@ print(C)
 print(np.shape D)
 print(D)
 ```
+
